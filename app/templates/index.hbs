@@ -1,0 +1,40 @@
+<ul>
+{{#each model as |a|}}
+  <li>
+    <div class="sentiment">{{a.activity_sentiment}}</div>
+    <div class="activity_content">
+      {{#if a.activity_attachment_type}}
+        <div class="image"><img src={{a.activity_attachment}} alt={{a.activity_message}}></div>
+      {{else}}
+        <div class="message">{{a.activity_message}}</div>
+      {{/if}}
+      Posted by <div class="name"><a href={{a.actor_url}}>{{a.actor_name}}</a></div> to <div class="provider"><a href={{a.activity_url}}>{{a.provider}}</a></div> on <div class="date">{{a.activity_date}}</div>
+    </div>
+    <div class="activity_social_status">
+      <ul>
+        <li>Likes: {{a.activity_likes}}</li>
+        <li>Shares: {{a.activity_shares}}</li>
+        <li>Comments: {{a.activity_comments}}</li>
+      </ul>
+    </div>
+    <div class="interaction">
+      <button name="promote">Promote</button>
+      <button name="reply">Reply</button>
+      <button name="show_details">Show Details</button>
+    </div>
+    <div class="details">
+      <div class="avator"><img src={{a.actor_avator}} alt={{a.actor_username}}></div>
+      <div>
+        <ul>
+          <li>Name: {{a.actor_name}}</li>
+          <li>Username: {{a.actor_username}}</li>
+          <li>Profile: {{a.actor_url}}</li>
+          <li>Description:  {{a.actor_description}}</li>
+          <li>Location: {{a.longitude}} {{a.latitude}}</li>
+        </ul>
+      </div>
+    </div>
+  </li>
+{{/each}}
+</ul>
+{{outlet}}
