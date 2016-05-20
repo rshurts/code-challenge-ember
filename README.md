@@ -1,7 +1,17 @@
 # Nuvi-challenge
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple UI to display JSON data as part of my application.
+
+I decided on using [Ember.js](http://emberjs.com/) to build the UI as it would give me an opportunity to learn Ember. To take the concept further, I would move the data into an Ember data model and add pagination so a limited number of results would be shown at a time.
+
+
+# Viewing the results
+
+The results may be views in two ways:
+
+* Simply visit [http://oceanic-ground.surge.sh/](http://oceanic-ground.surge.sh/).
+* Follow the instructions below to install the dependencies and run an Ember server locally.
+
 
 ## Prerequisites
 
@@ -11,43 +21,15 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+1. `git clone <repository-url>` this repository
+2. change into the new directory
+3. `npm install`
+4. `bower install`
 
-## Running / Development
+## Running
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+5. `ember server`
+6. Visit your app at [http://localhost:4200](http://localhost:4200).
