@@ -1,0 +1,10 @@
+document.cookie = 'SESSION=NUVI-12345';
+
+var request = new XMLHttpRequest();
+request.open('GET', 'https://nuvi-challenge.herokuapp.com/activities', true);
+request.send(null);
+request.onreadystatechange = function() {
+  if (request.readyState === 4 && request.status === 200) {
+    console.log(request.responseText);
+  }
+};
