@@ -7,10 +7,9 @@ I decided on using [Ember.js](http://emberjs.com/) to build the UI as it would g
 
 # Viewing the results
 
-The results may be views in two ways:
+Simply visit [http://oceanic-ground.surge.sh/](http://oceanic-ground.surge.sh/).
 
-* Simply visit [http://oceanic-ground.surge.sh/](http://oceanic-ground.surge.sh/).
-* Follow the instructions below to install the dependencies and run an Ember server locally.
+*Or* follow the instructions below to install the dependencies and run an Ember server locally.
 
 
 ## Prerequisites
