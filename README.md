@@ -1,4 +1,4 @@
-# Nuvi-challenge
+# code-challenge-ember
 
 Simple UI to display JSON data as part of my application.
 
